@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">拆弹game</string>
+    <string name="Disarm_Bombs">拆弹</string>
+    <string name="time">时间</string>
+    <string name="bomb">炸弹</string>
+    <string name="restart">重来</string>
+    <string name="b_ok">好吧</string>
+
+</resources>
