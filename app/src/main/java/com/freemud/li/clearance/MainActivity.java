@@ -12,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -25,6 +24,9 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * saolei game
+ */
 public class MainActivity extends Activity implements OnClickListener,
         OnTouchListener {
 
@@ -157,7 +159,7 @@ public class MainActivity extends Activity implements OnClickListener,
                 CellImageView civ = new CellImageView(MainActivity.this, i, j);
                 civ.setLayoutParams(gllp);
                 civ.setOnClickListener(this);
-                civ.setOnTouchListener(this);
+//                civ.setOnTouchListener(this);
                 civs[i][j] = civ;
                 gl.addView(civ);
             }

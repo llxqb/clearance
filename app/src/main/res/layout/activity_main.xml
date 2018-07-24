@@ -24,14 +24,14 @@
             android:id="@+id/cb_mark"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/bg_cb_mark"
             android:button="@null" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/time"
             android:scaleType="fitXY"
             tools:ignore="ContentDescription" />
@@ -41,14 +41,13 @@
             android:layout_width="25dp"
             android:layout_height="20dp"
             android:background="@color/WHITE"
-            android:gravity="center_vertical|right"
             android:textColor="@color/BLACK"
             android:textSize="15sp" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/bomb_nomal"
             android:scaleType="fitXY"
             tools:ignore="ContentDescription" />
@@ -66,9 +65,8 @@
             android:id="@+id/tv_level"
             android:layout_width="25dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/bg_tv_level"
-            android:clickable="true"
             android:gravity="center"
             android:textColor="@color/BLACK"
             android:textSize="12sp" />
@@ -77,7 +75,7 @@
             android:id="@+id/b_restart"
             android:layout_width="25dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/bg_b_restart"
             android:gravity="center"
             android:text="@string/restart"
@@ -88,7 +86,7 @@
             android:id="@+id/b_more"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/bg_cb_more" />
     </LinearLayout>
 
