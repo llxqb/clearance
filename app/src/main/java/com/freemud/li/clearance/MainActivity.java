@@ -4,10 +4,12 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,6 +21,9 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.GridLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.freemud.li.constant.Constant;
+import com.freemud.li.yh.YHActivity;
 
 import java.util.Random;
 import java.util.Timer;
@@ -232,7 +237,7 @@ public class MainActivity extends Activity implements OnClickListener,
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "author:  ll",
+                Toast.makeText(MainActivity.this, "author:  liuli",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -270,12 +275,16 @@ public class MainActivity extends Activity implements OnClickListener,
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 //                        ad.dismiss();
+
                     }
                 })
                 .setNegativeButton("重来", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        initView();
+//                        initView();
+                        Log.e("MainActivity","bombNumber:"+bombNumber);
+                        Constant.MLevel =bombNumber;
+                        YHActivity.start(MainActivity.this);
                     }
                 })
                 .create();
