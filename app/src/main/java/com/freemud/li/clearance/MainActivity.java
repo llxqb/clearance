@@ -198,7 +198,6 @@ public class MainActivity extends Activity implements OnClickListener,
     private void initAction() {
         Button b_back = (Button) findViewById(R.id.b_back);
         b_back.setOnClickListener(new OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 closeTimer();

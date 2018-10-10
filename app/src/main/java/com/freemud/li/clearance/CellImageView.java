@@ -4,10 +4,13 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.ImageView;
 
+import java.util.Random;
+
 @SuppressLint("ClickableViewAccessibility")
 public class CellImageView extends ImageView {
 	private int row;
 	private int column;
+	private int color;
 
 	public CellImageView(Context context) {
 		super(context);
@@ -23,8 +26,21 @@ public class CellImageView extends ImageView {
 				Utils.dip2px(context, (float) 0.5),
 				Utils.dip2px(context, (float) 0.5),
 				Utils.dip2px(context, (float) 0.5));
+//		Random random = new Random();
+//		int count = random.nextInt(2);
+//		if(count==0){
+//			color = R.drawable.bg_green;
+//		}else if(count ==1){
+//			color = R.drawable.bg_red;
+//		}
+//		else if(count ==2){
+//			color = R.drawable.bg_white;
+//		}else if(count ==3){
+//			color = R.drawable.bg_blue;
+//		}
+		color = R.drawable.bg_green;
 		this.setImageDrawable(context.getResources().getDrawable(
-				R.drawable.bg_green));
+				color));
 		this.setScaleType(getScaleType().FIT_XY);
 		this.setMinimumWidth(Utils.dip2px(context, 30));
 		this.setMinimumHeight(Utils.dip2px(context, 30));

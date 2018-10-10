@@ -10,7 +10,7 @@
         android:id="@+id/l"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="@color/BLACK"
+        android:background="@color/GRAY"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -94,7 +94,7 @@
         android:id="@+id/gl"
         android:layout_width="300dp"
         android:layout_height="450dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="@color/BLACK"
         android:columnCount="10"
         android:rowCount="15"
